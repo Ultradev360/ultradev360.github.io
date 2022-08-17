@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+
+*{
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    font-family: epilogue;
+    font-size: 14px;
+}
+body{
+    background: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+}
+.body{
+}
+.menu{
+    width: 100%;
+    height:25px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1;
+    background-color:hsl(0, 0%, 98%) ;
+}
+label{
+    position: absolute;
+    top: 5px;
+    margin-left: 15px;
+}
+#left-menu{
+    float: left;
+    margin-left:30px;
+    position: relative;
+    left: 50px;
+}
+#right-menu{
+    float: right;
+}
+nav{
+    padding:5px 25px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+    line-height: 18px;
+    padding-left: 10px;
+    justify-content: center;
+    align-items: center;
+}
+#dropdown-menu,#dropdown-menu1{
+    position: absolute;
+    top:40px;
+    background: white;
+    border-radius: 5px;
+    box-shadow:0px 1px 20px 1px hsl(0, 0%, 77%);
+    float: left;
+    display: none;
+}
+#arrow-up,#arrow-up1{
+    transition: 0.3s;
+    display:none;
+}
+#arrow-down,#arrow-down1{
+    display:inline-flex;
+    transition: 0.3s;
+}
+nav ul li:hover{
+    font-weight: 700;
+}
+#menu1{
+    left: 15px;  
+}
+#dropdown-menu,#dropdown-menu1{
+    padding: 10px 10px;
+}
+#dropdown-menu .dropdown-content ,#dropdown-menu1 .dropdown-content{
+    font-weight: 400;
+    align-items: center;
+    padding:5px 0px;
+}
+#dropdown-menu .dropdown-content a,#dropdown-menu1 .dropdown-content a{
+ color: gray;
+}
+#reg-btn{
+    background: transparent;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+#reg:hover{
+    font-weight:bold;
+    border: 2px solid black;
+}
+.image{
+    width:35%;
+    height:85vh;
+    transform: translate(170%,15%);
+    background-image: url(image.png);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.textarea{
+    position: absolute;
+    width: 50%;
+    padding: 9px 20px;
+    top: 30%;
+    left:9%;
+}
+h1{
+    padding-bottom: 25px;
+    white-space:pre;
+    font-family: epilogue;
+    font-weight: 500;
+    font-size: 70px;
+}
+p{
+    padding-bottom: 35px;
+    padding-right: 70px;
+    font-size: 16px;
+}
+#l-more{
+   background-color: black;
+   color: white;
+   padding: 7px 15px; 
+   border-radius: 10px;
+   font-weight: bold;
+   border: 1px solid black;
+}
+#l-more:hover{
+   background-color: transparent;
+   color: black;
+   cursor: pointer;
+}
+svg{
+    margin-right: 5px;
+}
+#svg-foot{margin-right: 0;}
+footer{
+    margin-top: 30px;
+
+}
